@@ -25,11 +25,11 @@ if (!in_array($page, $allowedPages)) {
 
 <body>
     <nav>
-
+        <?php include_once './modules/nav/nav.php'; ?>
     </nav>
 
     <aside>
-
+        <?php include_once './modules/aside/linkAside.php'; ?>
     </aside>
 
 

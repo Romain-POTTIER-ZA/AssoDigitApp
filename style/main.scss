@@ -8,6 +8,7 @@ list-style-type: none;
 text-decoration: none;
 box-sizing: border-box;
 scroll-behavior: smooth;
+transition: all 0.3s ease  ;
 }
 body{
 display: grid;
@@ -23,7 +24,7 @@ grid-template-areas:
   text-align: center;
   height: 100vh;
   margin: 0;
-}
+// style de nav et ses composants
 nav{
 grid-area: nav;
 background: linear-gradient(90deg,#23296A,#a52d4f,#fda040);
@@ -31,14 +32,89 @@ position: sticky;
 top: 0;
 z-index: 1000;
 height: 80px;
-display: flex;
+display: inline-flex;
 align-items: center;
 justify-content: space-between;
 flex-direction: row;
 }
+.colNav{
+display: flex;
+flex-direction: row;
+align-items: center;
+    .logo_title{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+        h1{
+            margin-left: 10px;
+        }
+    
+    }  
+}
+}
+
+// style aside et ses composants
 aside{
 grid-area: aside;
+
+ul.linkAside{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+
+    li.btnLinkAside{
+    border: 1px solid #23296A;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    width: 80%;
+    cursor: pointer;
+
+        a.link{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        color: #23296A;
+        }
+
+    }
+
+    li.btnLinkAside:hover{
+    background-color: #23296A;
+    a.link{
+    color: white;}
+    }
 }
+
+.btnLogout{
+    border:1px solid #a52d4f !important;
+        a.link{
+    color: #a52d4f !important;
+        }
+        &:hover{
+        background-color: #a52d4f !important;
+            a.link{
+            color: white !important;
+            }
+        }
+    
+}
+.spacer{
+    flex-grow: 1;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 80%;
+}
+
+}
+
+
 main{
 grid-area: main;
 background-color: white;
