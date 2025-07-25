@@ -16,7 +16,7 @@
         </a>
     </li>
     <li class="btnLinkAside">
-        <a href="/?page=paid" class="link">
+        <a href="?page=paid" class="link">
             <span class="material-symbols-outlined">
                 paid
             </span>
@@ -24,7 +24,7 @@
         </a>
     </li>
     <li class="btnLinkAside">
-        <a href="/?page=settings" class="link">
+        <a href="?page=settings" class="link">
             <span class="material-symbols-outlined">
                 settings
             </span>

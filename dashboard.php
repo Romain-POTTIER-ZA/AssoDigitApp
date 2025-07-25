@@ -1,14 +1,22 @@
 <?php
+// session_start();
 
+// if (!isset($_SESSION['user_id'])) {
+//     header('Location: /index.php');
+//     exit();
+// }
 
 $allowedPages = [
-    'home'
+    'home',
+    'licencies',
+    'paid',
+    'settings'
 ];
 
 $page = $_GET['page'] ?? 'home';
 
 if (!in_array($page, $allowedPages)) {
-    
+
     $page = 'home';
 }
 
