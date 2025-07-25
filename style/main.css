@@ -53,6 +53,34 @@ body .colNav .logo_title h1 {
   margin-left: 10px;
 }
 
+ul.navLicencie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+ul.navLicencie li.btnLinkLicencie {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+ul.navLicencie li.btnLinkLicencie a.link {
+  color: white;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+ul.navLicencie li.btnLinkLicencie:hover {
+  background-color: white;
+}
+ul.navLicencie li.btnLinkLicencie:hover a.link {
+  color: #23296A;
+}
+
 aside {
   grid-area: aside;
 }
