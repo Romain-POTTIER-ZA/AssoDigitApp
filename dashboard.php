@@ -38,11 +38,13 @@ if (!in_array($page, $allowedPages)) {
 
     <aside>
         <?php include_once './modules/aside/linkAside.php'; ?>
+
     </aside>
 
 
     <main>
         <?php include("./pages/$page.php"); ?>
+        <?php include_once './modules/settings/db.php'; ?>
     </main>
     <footer>
 
