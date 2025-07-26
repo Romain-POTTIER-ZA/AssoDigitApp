@@ -227,3 +227,34 @@ margin-top: 20px;
         }
     }
 }
+// style container et ses composants
+.container{
+    margin-top: 20px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width:80%;
+padding: 10px;
+border-radius: 24px;
+border: 1px solid rgba(0, 0, 0, 0.1);
+justify-content: center;
+position: relative;
+    .card{
+        width: 250px;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 50px;
+        background: rgba(143, 143, 143, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+        color: #23296A;
+        }
+        h2{
+        color: #a52d4f;
+        }
+    }
+}
