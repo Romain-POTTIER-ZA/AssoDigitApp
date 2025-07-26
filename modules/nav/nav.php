@@ -19,7 +19,8 @@
 </div>
 <div class="colNav">
     <?php
-    if ($page === 'licencies') {
+    // if ($user_id) {
+         if ($page === 'licencies') {
         include_once './modules/nav/navLicencie.php';
     } elseif ($page === 'paid') {
         include_once './modules/nav/navPaid.php';
@@ -28,6 +29,10 @@
     } else {
         echo' ';
     }
+    // } else {
+       
+    // }
+   
 
     ?>
 

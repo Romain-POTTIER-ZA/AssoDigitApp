@@ -147,4 +147,70 @@ footer {
   grid-area: footer;
   bottom: 0;
   background: linear-gradient(90deg, #23296A, #a52d4f, #fda040);
+}
+
+form.formLogin {
+  padding: 20px;
+  border-radius: 12px;
+  width: 30%;
+  max-width: 1200px;
+  min-width: 200px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.formGroup {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.formGroup label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #23296A;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0 5px;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+.formGroup input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #23296A;
+  font-size: 16px;
+  color: #23296A;
+  background-color: white;
+}
+.formGroup input:focus {
+  border-color: #a52d4f;
+  outline: none;
+  box-shadow: 0 0 10px rgba(162, 45, 79, 0.5);
+}
+.formGroup input:not(:-moz-placeholder) + label {
+  transform: translateY(-20px) scale(0.85);
+  color: #a52d4f;
+  font-size: 14px;
+}
+.formGroup input:focus + label, .formGroup input:not(:placeholder-shown) + label {
+  transform: translateY(-20px) scale(0.85);
+  color: #a52d4f;
+  font-size: 14px;
+}
+.formGroup button[type=submit] {
+  width: 60%;
+  padding: 10px;
+  outline: none;
+  border-radius: 24px;
+  border: 1px solid #23296A;
+  color: #23296A;
+  font-weight: 700;
+  cursor: pointer;
+}
+.formGroup button[type=submit]:hover {
+  background: linear-gradient(90deg, #23296A, #a52d4f, #fda040);
+  color: white;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 8px rgba(35, 41, 106, 0.2);
 }/*# sourceMappingURL=main.css.map */
